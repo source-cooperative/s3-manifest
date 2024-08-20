@@ -120,9 +120,11 @@ async fn generate_manifest(
 
     // Set up progress bar
     let pb = ProgressBar::new_spinner();
-    pb.set_style(ProgressStyle::default_spinner()
-        .template("{spinner:.green} [{elapsed_precise}] [{wide_bar:.cyan/blue}] {pos}/{len} ({per_sec}, {eta})")
-        .progress_chars("#>-"));
+    pb.set_style(
+        ProgressStyle::default_spinner()
+            .template("{spinner:.green} [{elapsed_precise}] {pos} Objects Scanned ({per_sec})")
+            .progress_chars("#>-"),
+    );
     pb.set_length(0); // Indeterminate progress bar
 
     let start_time = Instant::now();
