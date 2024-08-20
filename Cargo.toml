@@ -1,5 +1,6 @@
 [package]
 name = "s3-manifest"
+authors = ["Kevin Booth <kevin@kb.gg>"]
 version = "0.0.5"
 edition = "2021"
 

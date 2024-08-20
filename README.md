@@ -1,4 +1,4 @@
- S3 Manifest Generator
+ # S3 Manifest Generator
 
  S3 Manifest Generator is a Rust-based command-line tool that creates a Parquet manifest file for objects in an S3 bucket or a specific prefix within a bucket. This tool is useful for quickly generating an inventory of S3 objects, including their metadata, in a compact and efficiently queryable format.
 
@@ -16,8 +16,8 @@
  To install the S3 Manifest Generator, you need to have Rust and Cargo installed on your system. Then, you can build the project from source:
 
  ```bash
- git clone https://github.com/yourusername/s3-manifest-generator.git
- cd s3-manifest-generator
+ git clone https://github.com/source-cooperative/s3-manifest.git
+ cd s3-manifest
  cargo build --release
  ```
 
@@ -82,6 +82,3 @@
  ## Contributing
 
  Contributions are welcome! Please feel free to submit a Pull Request.
- ```
-
- This README provides an overview of your project, installation instructions, usage examples, and other relevant information. You may want to customize it further based on your specific needs, add sections like "Contributing Guidelines" or "Troubleshooting," or include any other project-specific details.
