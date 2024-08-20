@@ -1743,9 +1743,10 @@ checksum = "f3cb5ba0dc43242ce17de99c180e96db90b235b8a9fdc9543c96d2209116bd9f"
 
 [[package]]
 name = "s3-manifest"
-version = "0.0.5"
+version = "0.0.7"
 dependencies = [
  "arrow",
+ "bytes",
  "chrono",
  "clap",
  "futures",
@@ -1753,6 +1754,7 @@ dependencies = [
  "parquet",
  "rusoto_core",
  "rusoto_s3",
+ "tempfile",
  "tokio",
  "tokio-retry",
  "url",
